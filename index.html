@@ -1,274 +1,435 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Element Details</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Wael Moughrbel Personal Website</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- 3rdPartyLibs CSS Files -->
+  <link href="assets/3rdPartyLibs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/3rdPartyLibs/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/3rdPartyLibs/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <link href="assets/css/styles.css" rel="stylesheet">
+
 </head>
 
 <body>
 
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-3 d-flex justify-content-start">
-        <div class="element dim-6-by-6 booth-yellow" name="ClickableElement">
-          <p class="text-dark fs-5 fw-bold text-center">
-            H6-119 <br> Silver <br> S3 <br> 6x6
-          </p>
-        </div>
-        <div class="modal">
-          <div class="modal-content">
-            <span class="close fs-2">&times;</span>
-            <h2>Booth Details</h2>
-            <hr>
-            <p class="fw-bold">
-              Booth Number: <span class="text-primary"> H6-119 </span> <br>
-              Size: <span class="text-primary"> 6x6 </span> <br>
-              Type: <span class="text-primary"> S3 </span> <br>
-              Price: <span class="text-primary"> 1800 KD </span>
-            </p>
-          </div>
+  <header id="header-section">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="assets/img/personal.jpg" alt="Avatar"> Wael Moughrbel
+      </div>
+      <ul class="nav-links">
+          <li><a href="">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+
+  <div id="intro" class="intro text-light">
+    <div class="display-table intro-background">
+      <div class="table-cell">
+        <div class="intro-container">
+          <span class="intro-title">Welcome to my world of</span>
+          <p><span id="mission-passion" class="intro-subtitle">Software Development</span></p>
+          <h5 class="intro-subtitle-sm">
+            <p>where I create, innovate, and acheive.</p>
+          </h5>
+          <br>
+          <a class="contact-btn scrollto" href="#contact">Get in Touch</a>
         </div>
       </div>
-
-      <div class="col-md-6 d-flex justify-content-center">
-        <div class="element dim-6-by-6 booth-green" name="ClickableElement">
-          <p class="text-white fs-5 fw-bold text-center">
-            H6-120 <br> SP <br> 6x6
-          </p>
-        </div>
-        <div class="modal">
-          <div class="modal-content">
-            <span class="close fs-2">&times;</span>
-            <h2>Booth Details</h2>
-            <hr>
-            <p class="fw-bold">
-              Booth Number: <span class="text-primary"> H6-120 </span> <br>
-              Size: <span class="text-primary"> 6x6 </span> <br>
-              Type: <span class="text-primary"> SP </span> <br>
-              Price: <span class="text-primary"> 1800 KD </span>
-            </p>
-          </div>
-        </div>
-        <div class="element dim-6-by-6 booth-green" name="ClickableElement">
-          <p class="text-white fs-5 fw-bold text-center">
-            H6-121 <br> SP <br> 6x6
-          </p>
-        </div>
-        <div class="modal">
-          <div class="modal-content">
-            <span class="close fs-2">&times;</span>
-            <h2>Booth Details</h2>
-            <hr>
-            <p class="fw-bold">
-              Booth Number: <span class="text-primary"> H6-121 </span> <br>
-              Size: <span class="text-primary"> 6x6 </span> <br>
-              Type: <span class="text-primary"> SP </span> <br>
-              Price: <span class="text-primary"> 1800 KD </span>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 d-flex justify-content-end">
-        <div class="element dim-6-by-6 booth-yellow" name="ClickableElement">
-          <p class="text-dark fs-5 fw-bold text-center">
-            H6-122 <br> Silver <br> S4 <br> 6x6
-          </p>
-        </div>
-        <div class="modal">
-          <div class="modal-content">
-            <span class="close fs-2">&times;</span>
-            <h2>Booth Details</h2>
-            <hr>
-            <p class="fw-bold">
-              Booth Number: <span class="text-primary"> H6-122 </span> <br>
-              Size: <span class="text-primary"> 6x6 </span> <br>
-              Type: <span class="text-primary"> S4 </span> <br>
-              Price: <span class="text-primary"> 1800 KD </span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row mt-5">
-      <div class="col-md-3">
-        <div class="d-flex">
-          <div class="element dim-6-by-6 booth-yellow my-5" name="ClickableElement">
-            <p class="text-dark fs-5 fw-bold text-center">
-              H6-112 <br> Silver <br> S1 <br> 6x6
-            </p>
-          </div>
-          <div class="modal">
-            <div class="modal-content">
-              <span class="close fs-2">&times;</span>
-              <h2>Booth Details</h2>
-              <hr>
-              <p class="fw-bold">
-                Booth Number: <span class="text-primary"> H6-112 </span> <br>
-                Size: <span class="text-primary"> 6x6 </span> <br>
-                Type: <span class="text-primary"> Silver </span> <br>
-                Price: <span class="text-primary"> 1800 KD </span>
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="d-flex">
-          <div class="element dim-9-by-6 booth-yellow my-5" name="ClickableElement">
-            <p class="text-dark fs-5 fw-bold text-center">
-              H6-97 <br> Gold <br> G3 <br> 9x6
-            </p>
-          </div>
-          <div class="modal">
-            <div class="modal-content">
-              <span class="close fs-2">&times;</span>
-              <h2>Booth Details</h2>
-              <hr>
-              <p class="fw-bold">
-                Booth Number: <span class="text-primary"> H6-97 </span> <br>
-                Size: <span class="text-primary"> 9x6 </span> <br>
-                Type: <span class="text-primary"> G3 </span> <br>
-                Price: <span class="text-primary"> 2700 KD </span>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="d-flex">
-          <div class="element dim-9-by-6 booth-yellow my-5" name="ClickableElement">
-            <p class="text-dark fs-5 fw-bold text-center">
-              H6-88 <br> Gold <br> G1 <br> 9x6
-            </p>
-          </div>
-          <div class="modal">
-            <div class="modal-content">
-              <span class="close fs-2">&times;</span>
-              <h2>Booth Details</h2>
-              <hr>
-              <p class="fw-bold">
-                Booth Number: <span class="text-primary"> H6-88 </span> <br>
-                Size: <span class="text-primary"> 9x6 </span> <br>
-                Type: <span class="text-primary"> G1 </span> <br>
-                Price: <span class="text-primary"> 2700 KD </span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 mt-5">
-        <div class="row justify-content-center">
-          <div class="element dim-stage my-5" name="ClickableElement">
-            <img src="images/StageArea.jpg"/>
-          </div>
-          <div class="modal">
-            <div class="modal-content">
-              <span class="close fs-2">&times;</span>
-              <h2>Booth Details</h2>
-              <hr>
-              <p class="fw-bold">
-                Booth Number: <span class="text-primary"> STAGE AREA </span> <br>
-                Size: <span class="text-primary"> NA </span> <br>
-                Type: <span class="text-primary"> NA </span> <br>
-                Price: <span class="text-primary"> NA </span>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-center mt-5">
-          <div class="element dim-13-by-12 my-5 bg-white" name="ClickableElement">
-            <p class="text-dark fs-5 fw-bold text-center">
-              F&B-1 <br> 13x12
-            </p>
-          </div>
-          <div class="modal">
-            <div class="modal-content">
-              <span class="close fs-2">&times;</span>
-              <h2>Booth Details</h2>
-              <hr>
-              <p class="fw-bold">
-                Booth Number: <span class="text-primary"> F&B-1 </span> <br>
-                Size: <span class="text-primary"> 13x12 </span> <br>
-                Type: <span class="text-primary"> NA </span> <br>
-                Price: <span class="text-primary"> NA </span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="d-flex justify-content-end">
-          <div class="element dim-6-by-6 booth-yellow my-5" name="ClickableElement">
-            <p class="text-dark fs-5 fw-bold text-center">
-              H6-111 <br> Silver <br> S2 <br> 6x6
-            </p>
-          </div>
-          <div class="modal">
-            <div class="modal-content">
-              <span class="close fs-2">&times;</span>
-              <h2>Booth Details</h2>
-              <hr>
-              <p class="fw-bold">
-                Booth Number: <span class="text-primary"> H6-111 </span> <br>
-                Size: <span class="text-primary"> 6x6 </span> <br>
-                Type: <span class="text-primary"> S2 </span> <br>
-                Price: <span class="text-primary"> 1800 KD </span>
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="d-flex justify-content-end">
-          <div class="element dim-9-by-6 booth-yellow my-5" name="ClickableElement">
-            <p class="text-dark fs-5 fw-bold text-center">
-              H6-98 <br> Gold <br> G4 <br> 9x6
-            </p>
-          </div>
-          <div class="modal">
-            <div class="modal-content">
-              <span class="close fs-2">&times;</span>
-              <h2>Booth Details</h2>
-              <hr>
-              <p class="fw-bold">
-                Booth Number: <span class="text-primary"> H6-98 </span> <br>
-                Size: <span class="text-primary"> 9x6 </span> <br>
-                Type: <span class="text-primary"> G4 </span> <br>
-                Price: <span class="text-primary"> 2700 KD </span>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="d-flex justify-content-end">
-          <div class="element dim-9-by-6 booth-yellow my-5" name="ClickableElement">
-            <p class="text-dark fs-5 fw-bold text-center">
-              H6-87 <br> Gold <br> G2 <br> 9x6
-            </p>
-          </div>
-          <div class="modal">
-            <div class="modal-content">
-              <span class="close fs-2">&times;</span>
-              <h2>Booth Details</h2>
-              <hr>
-              <p class="fw-bold">
-                Booth Number: <span class="text-primary"> H6-87 </span> <br>
-                Size: <span class="text-primary"> 9x6 </span> <br>
-                Type: <span class="text-primary"> G2 </span> <br>
-                Price: <span class="text-primary"> 2700 KD </span>
-              </p>
-            </div>
-          </div>
-        </div>
-
     </div>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
-  <script src="js/booths.js"></script>
+
+  <main id="main">
+
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="section-container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="main-subtitle-container">
+                  <h1 class="main-subtitle">About Me</h1>
+                </div>
+                <p>
+                  Professional Sr. Software Developer with 5 years of experinece in the same domain.
+                  Main area of expertise is .Net Core as well as web technologies: HTML, CSS, Bootstrap and
+                  Javascript.
+                </p>
+                <p>
+                  My work involved responsive web design and full software development life cycle activities
+                  including:
+                <ul>
+                  <li>Meeting clients and organize their requirements in professional SRS documents
+                    and workflow digrams.</li>
+                  <li>System analysis, DB design (ERD diagrams) and UX/UI desgin.</li>
+                  <li>Full-stack web applications implementation (frontend and backend)</li>
+                  <li>Enhance and maintain web applications and web APIs.</li>
+                  <li>Automate paperwork to e-forms and workflows.</li>
+                </ul>
+                </p>
+                <p>
+                  My experinece also includes Database Management Systems like MySQL and SQL Server.
+                  In addition to UX/UI design skills using Figma.
+                </p>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-sm-6 col-md-7">
+                      <p><label class="label">Name: </label> <span>Wael Moughrbel</span></p>
+                      <p><label class="label">Title: </label> <span>Sr. Full Stack Developer</span></p>
+                      <p><label class="label">Email: </label> <span>wael_moughrbel@hotmail.com</span></p>
+                      <p><label class="label">Phone: </label> <span>(+965) 66274665</span></p>
+                      <p>
+                        <span class="label">Resume: </span>
+                        <span>
+                          <a href="assets/docs/WaelMoughrbelCV.pdf" target="_blank">Wael Moughrbel CV.pdf</a>
+                        </span>
+                      </p>
+                  </div>
+                  <div class="col-sm-6 col-md-5">
+                    <img src="assets/img/personal.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                  </div>
+                </div>
+                <div class="skill-mf">
+                  <p class="label">Main Skills:</p>
+
+                  <div class="row">
+                    <div class="skill-card primary row">
+                      <div class="col-md-3">
+                        <i class="bi bi-code-slash"></i>
+                      </div>
+                      <div class="col-md-9">
+                        <span class="skill-name">Web
+                          <span class="skill-percentage">95%</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="skill-card danger row">
+                      <div class="col-md-3">
+                        <i class="bi bi-gear-wide-connected"></i>
+                      </div>
+                      <div class="col-md-9">
+                        <span class="skill-name">.Net
+                          <span class="skill-percentage">85%</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="skill-card info row">
+                      <div class="col-md-3">
+                        <i class="bi bi-database-fill-lock"></i>
+                      </div>
+                      <div class="col-md-9">
+                        <span class="skill-name">SQL
+                          <span class="skill-percentage">70%</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="skill-card success row">
+                      <div class="col-md-3">
+                        <i class="bi bi-filetype-cs"></i>
+                      </div>
+                      <div class="col-md-9">
+                        <span class="skill-name">C#
+                          <span class="skill-percentage">90%</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="skill-card warning row">
+                      <div class="col-md-3">
+                        <i class="bi bi-ui-checks-grid"></i>
+                      </div>
+                      <div class="col-md-9">
+                        <span class="skill-name">UX/UI
+                          <span class="skill-percentage">70%</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="skill-card critical row">
+                      <div class="col-md-3">
+                        <i class="bi bi-file-earmark-text"></i>
+                      </div>
+                      <div class="col-md-9">
+                        <span class="skill-name">SRS
+                          <span class="skill-percentage">85%</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="services">
+      <div class="mask-parallax bg-image" style="background-image: url(assets/img/services.jpg)">
+        <div class="background-mask"></div>
+        <div class="container position-relative">
+          <div class="row">
+            <div class="main-title-container">
+              <h1 class="main-title main-title-light">Services</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <span class="service-icon-container"><i class="bi bi-bezier2"></i></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="service-title">Responsive Web Designs</h2>
+                  <p>
+                    Designing modern, responsive, animated, powerful and brand-styled web designs for all purposes
+                    to reflect brand innovative vision and goals.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <span class="service-icon-container"><i class="bi bi-boxes"></i></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="service-title">Systems Development</h2>
+                  <p>
+                    Developing software systems that meet clients requirements and facilitate
+                    day-to-day business work in an easy, innovative and automated way.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <span class="service-icon-container"><i class="bi bi-clipboard2-check"></i></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="service-title">System Analysis</h2>
+                  <p>
+                    Meeting clients, understanding their requirments and preparing clear technical SRS
+                    document to facilitate system development.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <span class="service-icon-container"><i class="bi bi-gear"></i></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="service-title">Automations</h2>
+                  <p>
+                    Using technologies to help automating workflows and moving from messy papers to organized
+                    paperless forms and workflows.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <span class="service-icon-container"><i class="bi bi-clipboard-data"></i></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="service-title">Reporting</h2>
+                  <p>
+                    Providing reporting services to ease extracting and utlizing data to help follow-up
+                    business acheivements and growth over time.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-card">
+                <div class="service-icon">
+                  <span class="service-icon-container"><i class="bi bi-card-checklist"></i></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="service-title">Refactoring</h2>
+                  <p>
+                    Enhancing websites and systems continuously in correspondence with business growth, brand
+                    update or new requirements.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+    <section id="portfolio" class="portfolio-section">
+      <div class="container">
+        <div class="row">
+          <div class="main-title-container">
+            <h1 class="main-title">Portfolio</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="project-container">
+              <a href="https://toc.jazeeraairways.com/" target="_blank" rel="noopener noreferrer nofollow">
+                <div class="project-thumbnail">
+                  <img src="assets/img/J9-TOC.jpg" alt="TOC Project Thumbnail" class="img-fluid">
+                </div>
+              </a>
+              <div class="project-description-container">
+                <div class="row">
+                  <h2 class="project-title">Jazeera Airways TOC</h2>
+                  <div>
+                    A system to help automate and facilitate Jezeera Airways terminal (T5) daily operations control
+                    as well as generating corresponding reports.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project-container">
+              <a href="https://viv.jazeeraairways.com/" target="_blank" rel="noopener noreferrer nofollow">
+                <div class="project-thumbnail">
+                  <img src="assets/img/VIV.jpg" alt="VIV Project Thumbnail" class="img-fluid">
+                </div>
+              </a>
+              <div class="project-description-container">
+                <div class="row">
+                  <h2 class="project-title">VIV Lounge</h2>
+                  <div>
+                    A booking management system to organize and archive all bookings for VIV Lounge in T1 and T5
+                    as well as generating corresponding reports.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project-container">
+              <a href="https://waelmg.github.io/" target="_blank" rel="noopener noreferrer">
+                <div class="project-thumbnail">
+                  <img src="assets/img/personal-site.jpg" alt="Wael Website Project Thumbnail" class="img-fluid">
+                </div>
+              </a>
+              <div class="project-description-container">
+                <div class="row">
+                  <h2 class="project-title">Wael Moughrbel Personal Website</h2>
+                  <div>
+                    A personal website to show portfolio, about and contact info.
+                    Developing this website is also to demo skills in responsive website design.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact" class="contact-background">
+      <div class="container">
+        <div class="row">
+          <div id="contact" class="section-container">
+            <div class="row">
+              <div class="main-subtitle-container">
+                <h1 class="main-subtitle">Contact</h1>
+              </div>
+              <div>
+                <h6>
+                  <p><i>"Innovation comes from sharing ideas. Suggestions are acheivements seeds."</i></p>
+                  <p>
+                    Got any idea, suggestion or even critism? Got a full time opportunity or freelance work
+                    requirments?
+                    Feel free to contact.
+                  </p>
+                </h6>
+                <ul class="contact-data">
+                  <li><span class="bi bi-geo-alt"></span>Kuwait City</li>
+                  <li><span class="bi bi-phone"></span>(+965) 66274665</li>
+                  <li><span class="bi bi-envelope"></span>wael_moughrbel@hotmail.com</li>
+                </ul>
+              </div>
+              <div class="socials-container">
+                <ul class="socials-container">
+                  <li>
+                    <a href="https://kw.linkedin.com/in/wael-moughrbel" target="_blank" rel="noopener noreferrer">
+                      <span class="social-icon-container"><i class="bi bi-linkedin"></i></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/waelmg" target="_blank" rel="noopener noreferrer">
+                      <span class="social-icon-container"><i class="bi bi-github"></i></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://stackoverflow.com/users/18081308/wael-moughrbel" target="_blank" rel="noopener noreferrer">
+                      <span class="social-icon-container"><i class="bi bi-stack-overflow"></i></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <p>&copy; 2023 <strong>Wael Moughrbel</strong>. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="to-top" onclick="scrollToTop()">
+    <i class="bi bi-arrow-up-circle-fill"></i>
+  </button>
+
+  <div id="loader">
+    <img src="assets/img/preloader.gif">
+  </div>
+
+  <!-- 3rdPartyLibs JS Files -->
+  <script src="assets/3rdPartyLibs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/3rdPartyLibs/glightbox/js/glightbox.min.js"></script>
+
+  <script src="assets/js/scripts.js"></script>
 
 </body>
 </html>
